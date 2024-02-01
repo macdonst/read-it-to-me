@@ -1,0 +1,23 @@
+{
+  "name": "read-it-to-me",
+  "version": "0.0.1",
+  "description": "A web component that will read content out to you using the web speech API.",
+  "main": "read-it-to-me.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/macdonst/read-it-to-me.git"
+  },
+  "keywords": [
+    "webcomponent",
+    "speechrec"
+  ],
+  "author": "Simon MacDonald",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/macdonst/read-it-to-me/issues"
+  },
+  "homepage": "https://github.com/macdonst/read-it-to-me#readme"
+}
