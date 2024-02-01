@@ -1,6 +1,6 @@
 {
   "name": "read-it-to-me",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A web component that will read content out to you using the web speech API.",
   "main": "read-it-to-me.js",
   "scripts": {
