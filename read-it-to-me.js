@@ -65,7 +65,7 @@ template.innerHTML = `
   </span>
 `
 
-class ReadItToMe extends HTMLElement {
+export class ReadItToMe extends HTMLElement {
   static get observedAttributes() {
     return [ 'pitch', 'rate', 'voice' ]
   }
