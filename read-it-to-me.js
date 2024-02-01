@@ -3,13 +3,14 @@ const template = document.createElement('template');
 template.innerHTML = `
 <style>
   :host {
-    --_accent: #AD6EF9;
-    --_fore: black;
-    --_back: white;
+    --_ritm-color: var(--ritm-color, #AD6EF9);
+    --_ritm-active: var(--ritm-active, black);
+    --_ritm-text: var(--ritm-text, white);
+    --_ritm-top: var(--ritm-top, 0em);
   }
   :host button {
-    color: var(--_back);
-    background-color: var(--_accent, var(--_fore));
+    color: var(--_ritm-text);
+    background-color: var(--_ritm-color, var(--_ritm-active));
     border: 1px solid transparent;
     white-space: nowrap;
     padding-inline: 0.5rem;
@@ -23,9 +24,9 @@ template.innerHTML = `
     aspect-ratio: 1 / 1;
   }
   :host button:active {
-    color: var(--_fore);
-    background-color: var(--_accent, var(--_back));
-    border: 1px solid var(--_fore);
+    color: var(--_ritm-active);
+    background-color: var(--_ritm-color, var(--_ritm-text));
+    border: 1px solid var(--_ritm-active);
   }
 
   .pause-icon {
@@ -37,7 +38,7 @@ template.innerHTML = `
     flex-direction: row;
     justify-content: end;
     gap: 0.25em;
-    margin-block-start: var(--adjust-top, -5em);
+    margin-block-start: var(--_ritm-top);
   }
 
   svg {
